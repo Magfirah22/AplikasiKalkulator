@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d1c9c9"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="MASUKKAN DUA ANGKA"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/etAngkake1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp"
+        android:hint="Masukkan angka pertama"
+        android:textSize="20dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/etAngkake2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Masukkan angka kedua"
+        android:layout_marginBottom="8dp"
+        android:textSize="20dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,SpUsage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+
+    <Button
+        android:id="@+id/btTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+"
+        tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btTambah"
+        android:layout_toRightOf="@+id/btTambah"
+        android:text="-"
+        android:layout_weight="1"
+        tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:layout_alignBaseline="@+id/btKurang"
+        android:layout_toRightOf="@+id/btKurang"
+        android:layout_weight="1"
+        tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btKali"
+        android:layout_toRightOf="@+id/btKali"
+        android:layout_weight="1"
+        android:text="/"
+        tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btBersih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BERSIHKAN"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvjumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
